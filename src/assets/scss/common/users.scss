@@ -1,14 +1,20 @@
 .users {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 16px;
 }
 
 .user-card {
   background: #7db88c;
+  animation: show 1s;
   padding: 8px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+  overflow: hidden;
   &__avatar {
     border-radius: 4px;
   }
 }
+

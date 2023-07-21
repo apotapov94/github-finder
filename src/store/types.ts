@@ -10,6 +10,9 @@ export interface State {
   users: Array<User> | null
   repos: Array<Repo> | null
   totalCount: number
+  currentPage: number
+  loadMore: boolean
+  loading: boolean
 }
 
 export interface Repo {

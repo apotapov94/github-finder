@@ -1,7 +1,7 @@
 <template>
   <section class="github-user-section">
     <div class="container">
-      <div class="search-count">Найдено пользователей: {{ searchCount }}</div>
+      <div v-if="searchCount > 0 && !loading" class="search-count">Найдено пользователей: {{ searchCount }}</div>
       <Users />
     </div>
   </section>
@@ -13,6 +13,7 @@
   import { store } from '../store';
 
   const searchCount = computed(() => store.state.totalCount)
+  const loading = computed(() => store.state.loading)
 </script>
 
 <style scoped>

@@ -10,3 +10,13 @@
     align-items: center;
   }
 }
+.search-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  background: $success-color;
+  color: #fff;
+  animation: show 1s;
+  padding: 16px;
+}

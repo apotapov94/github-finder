@@ -2,11 +2,22 @@
 import Header from './components/Header.vue'
 import Search from './components/Search.vue'
 import UserSection from './components/UserSection.vue'
+import { onMounted } from 'vue';
+
+const onScroll = () => {
+  console.log(document.documentElement.scrollTop, window.pageYOffset)
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll);
+})
 </script>
 
 <template>
-  <Header />
-  <Search />
+  <div class="top-bar">
+    <Header />
+    <Search />
+  </div>
   <UserSection />
 </template>
 
