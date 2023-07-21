@@ -1,0 +1,27 @@
+// обновленные стандартные стили
+@import 'utils/vars';
+@import 'utils/reset';
+// Заголовок
+@import 'common/title';
+// Шрифты
+@import 'common/fonts';
+// Контролы
+@import 'common/controls';
+// Линки
+@import 'common/link';
+// Кнопки
+@import 'common/buttons';
+// Меню
+@import 'common/navbar';
+// Таблица
+@import 'common/table';
+// Анимации
+@import 'common/animations';
+// Сообщения
+@import 'common/message';
+// Шапка
+@import 'common/header';
+// Поиск
+@import 'common/search';
+// Список пользователей
+@import 'common/users';

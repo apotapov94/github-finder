@@ -1,0 +1,14 @@
+.message {
+    border-radius: 10px;
+    padding: $m2;
+    margin: 16px 0;
+    max-width: 500px;
+    &.success {
+        background: $success-color;
+        color: #ffffff;
+    }
+    &.error {
+        background: $danger-color;
+        color: #ffffff;
+    }
+}

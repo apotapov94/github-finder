@@ -1,0 +1,9 @@
+.header {
+  background: $primary-color;
+  color: $default-color;
+  padding: $m4;
+  text-align: center;
+  &__logo {
+    font-size: 32px;
+  }
+}

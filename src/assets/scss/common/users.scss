@@ -1,0 +1,14 @@
+.users {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 16px;
+}
+
+.user-card {
+  background: #7db88c;
+  padding: 8px;
+  border-radius: 4px;
+  &__avatar {
+    border-radius: 4px;
+  }
+}

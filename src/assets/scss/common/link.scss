@@ -1,0 +1,38 @@
+.link {
+  cursor: pointer;
+  color: $link-color;
+  &.linkWhite {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+  }
+  &.linkFalse {
+    border-bottom: 1px solid #b53f3f;
+    color: #b53f3f;
+  }
+  &.linkTrue {
+    border-bottom: 1px solid #7bd782;
+    color: #7bd782;
+  }
+}
+
+.header {
+  a {
+    color: #fff;
+    span {
+      color: #fff;
+    }
+    transition: all 0.3s;
+    &:hover {
+      color: $success-color;
+      span {
+        color: #fff;
+      }
+    }
+  }
+  .router-link-exact-active {
+    color: $success-color;
+    span {
+      color: #fff;
+    }
+  }
+}

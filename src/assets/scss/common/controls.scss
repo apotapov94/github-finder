@@ -1,0 +1,52 @@
+form {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+input {
+  padding: 16px 32px;
+  border-radius: 16px;
+  border: 1px solid $primary-color;
+
+}
+select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: 100%;
+}
+textarea {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: $mainFont;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+.input-group {
+  width: 475px;
+  &.error {
+    input {
+      background: rgb(138 75 73);
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
+      &::-webkit-calendar-picker-indicator {
+        fill: #fff;
+      }
+    }
+  }
+}
+.error-text {
+  color: $danger-color;
+}
